@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BI Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="logo">TeyzixCore</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Revenue</a>
+      <a href="#">Customers</a>
+      <a href="#">Orders</a>
+      <a href="#">Reports</a>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h2>Dashboard Overview</h2>
+      <button id="themeBtn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- KPI CARDS -->
+    <div class="kpi-cards">
+      <div class="card">
+        <h4>Total Revenue</h4>
+        <p>$128,400</p>
+      </div>
+      <div class="card">
+        <h4>Total Customers</h4>
+        <p>3,842</p>
+      </div>
+      <div class="card">
+        <h4>Total Orders</h4>
+        <p>1,257</p>
+      </div>
+      <div class="card">
+        <h4>Monthly Growth</h4>
+        <p>+12.5%</p>
+      </div>
+      <div class="card">
+        <h4>Conversion Rate</h4>
+        <p>4.3%</p>
+      </div>
+    </div>
+
+    <!-- CHARTS AREA -->
+    <div class="charts">
+      <div class="chart-box">
+        <canvas id="revenueChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="salesChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="customerChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="categoryChart"></canvas>
+      </div>
+    </div>
+
+    <!-- DATA TABLE -->
+    <div class="table-section">
+      <input type="text" id="searchInput" placeholder="Search customers...">
+      <table>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Revenue</th>
+            <th>Orders</th>
+            <th>Status</th>
+            <th>Region</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Rows are rendered by script.js -->
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

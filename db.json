@@ -1,0 +1,10 @@
+{
+  "customers": [
+    { "id": 1, "name": "John Doe",    "revenue": "$4,200", "orders": 12, "status": "Active",   "region": "North" },
+    { "id": 2, "name": "Jane Smith",  "revenue": "$3,800", "orders": 9,  "status": "Inactive", "region": "South" },
+    { "id": 3, "name": "Ali Hassan",  "revenue": "$5,100", "orders": 15, "status": "Active",   "region": "East"  },
+    { "id": 4, "name": "Sara Lee",    "revenue": "$2,900", "orders": 7,  "status": "Active",   "region": "West"  },
+    { "id": 5, "name": "Mike Brown",  "revenue": "$6,300", "orders": 20, "status": "Inactive", "region": "North" },
+    { "id": 6, "name": "Amina Yusuf", "revenue": "$4,700", "orders": 11, "status": "Active",   "region": "East"  }
+  ]
+}
